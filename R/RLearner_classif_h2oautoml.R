@@ -11,7 +11,7 @@ makeRLearner.classif.h2o.automl = function() {
     properties = c("twoclass", "multiclass", "numerics", "factors", "prob", "missings"),
     name = "H2O AutoML",
     short.name = "h2o.automl",
-    note = '`validation_frame` and `leaderboard_frame` have been set to `training_frame` so that the full training frame is used for training (instead of automatically subsetting the training frame to create a validation frame and leaderboard frame).'.,
+    note = '`validation_frame` and `leaderboard_frame` have been set to `training_frame` so that the full training frame is used for training (instead of automatically subsetting the training frame to create a validation frame and leaderboard frame).',
     callees = "h2o.automl"
   )
 }
