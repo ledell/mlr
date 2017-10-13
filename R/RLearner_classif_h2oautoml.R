@@ -4,9 +4,9 @@ makeRLearner.classif.h2o.automl = function() {
     cl = "classif.h2o.automl",
     package = "h2o",
     par.set = makeParamSet(
-      makeIntegerLearnerParam("max_models", lower = 1L, default = NULL),
+      makeIntegerLearnerParam("max_models", lower = 1L, default = 100L),
       makeIntegerLearnerParam("max_runtime_secs", lower = 1L, default = 3600L),
-      makeIntegerLearnerParam("seed", tunable = FALSE)
+      makeIntegerLearnerParam("seed", default = 1L, tunable = FALSE)
     ),
     properties = c("twoclass", "multiclass", "numerics", "factors", "prob", "missings"),
     name = "H2O AutoML",
